@@ -29,6 +29,7 @@ const person = {
   ]
 };
  
+//------------------------------------------------------
 
 // show Person Quantity
 const showPerson = document.getElementById('showPerson');
@@ -43,8 +44,8 @@ person.result.map((person) => {
   personDiv.classList.add('person');
   personDiv.innerHTML = `
       <h2 class="font-semibold text-2xl">Name: ${person.name.fullName}</h2>
-      <p class="font-semibold text-orange-300 text-xl">Age: </p>
-      <p class="font-semibold ">Street:</p>
+      <p class="font-semibold text-orange-300 text-xl">Age: ${person.age} </p>
+      <p class="font-semibold ">Street: ${person.address.street}</p>
     `
     personContainer.appendChild(personDiv);
 })
