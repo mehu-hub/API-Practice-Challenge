@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
+    <style>
+        .person {
+            background: rgb(95, 143, 238);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
+</head> 
 <body>
     <header>
 
     </header>
     <main>
-        <section>
-            <h2 class="text-center mt-5 text-4xl font-bold">Show 2 Person</h2>
-            <div class="container mx-auto mt-5 bg-blue-600 p-4 w-1/4 rounded text-white" id="person-container">
-
-            </div>
-        </section>
+        <div class="text-center mt-5 text-4xl font-bold" id="showPerson">
+        </div>
+        <div class="container flex gap-10 mx-auto" id="person-container">
+        </div>
     </main>
 
     <script src="JS/api-1-data.js"></script>
