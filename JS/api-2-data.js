@@ -41,7 +41,7 @@ data.map(car => {
     <img src=${car.imageURL}/>
     <p class="font-semibold text-2xl">Name: ${car.name}</p>
     <p class="text-xl mt-2 font-semibold text-gray-600">Details: ${car.description}</p>
-    <button class="bg-blue-600 text-white w-1/4 py-2 px-6 rounded mt-5">Price: ${car.price}k</button>
+    <button class="bg-blue-600 text-white md:w-1/4 py-2 px-6 rounded mt-5">Price: ${car.price}k</button>
   
   `
   carsContainer.appendChild(carDiv)
